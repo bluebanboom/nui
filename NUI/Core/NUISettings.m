@@ -24,6 +24,9 @@ static NUISettings *instance = nil;
     instance = [self getInstance];
     NUIStyleParser *parser = [[NUIStyleParser alloc] init];
     instance.styles = [parser getStylesFromFile:name];
+//    NUIJSONStyleParser *parser = [[NUIJSONStyleParser alloc] init];
+//    instance.styles = [parser getStylesFromFile:name];
+//    NSLog(@"%@", instance.styles);
 }
 
 + (void)loadStylesheetByPath:(NSString*)path

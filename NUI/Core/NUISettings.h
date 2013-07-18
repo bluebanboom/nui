@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NUIConverter.h"
 #import "NUIStyleParser.h"
+#import "NUIJSONStyleParser.h"
 #import "NUISwizzler.h"
 
 @interface NUISettings : NSObject {
