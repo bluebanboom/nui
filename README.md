@@ -1,6 +1,9 @@
 NUI
 ===
 Style iOS apps with a style sheet, similar to CSS
+Note
+----
+In this version of NUI, you can use *json* file instead of css file.
 
 Description
 -----------
