@@ -10,7 +10,6 @@
 		2765F6FE1797D04E00935727 /* Blue.NUI.json in Resources */ = {isa = PBXBuildFile; fileRef = 2765F6FD1797D04E00935727 /* Blue.NUI.json */; };
 		2765F7541797D0FD00935727 /* NUIJSONStyleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2765F7531797D0FD00935727 /* NUIJSONStyleParser.m */; };
 		2765F7561797DBF600935727 /* NUIStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = 2765F7551797DBF600935727 /* NUIStyle.json */; };
-		2765F75A1797DD2200935727 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2765F7591797DD2200935727 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2765F760179804C700935727 /* Default.NUI.json in Resources */ = {isa = PBXBuildFile; fileRef = 2765F75B179804C700935727 /* Default.NUI.json */; };
 		2765F761179804C700935727 /* Googolplex.NUI.json in Resources */ = {isa = PBXBuildFile; fileRef = 2765F75C179804C700935727 /* Googolplex.NUI.json */; };
 		2765F762179804C700935727 /* Round.NUI.json in Resources */ = {isa = PBXBuildFile; fileRef = 2765F75D179804C700935727 /* Round.NUI.json */; };
@@ -91,8 +90,6 @@
 		2765F7521797D0FD00935727 /* NUIJSONStyleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUIJSONStyleParser.h; sourceTree = "<group>"; };
 		2765F7531797D0FD00935727 /* NUIJSONStyleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUIJSONStyleParser.m; sourceTree = "<group>"; };
 		2765F7551797DBF600935727 /* NUIStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NUIStyle.json; sourceTree = "<group>"; };
-		2765F7581797DD2200935727 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
-		2765F7591797DD2200935727 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		2765F75B179804C700935727 /* Default.NUI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Default.NUI.json; sourceTree = "<group>"; };
 		2765F75C179804C700935727 /* Googolplex.NUI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Googolplex.NUI.json; sourceTree = "<group>"; };
 		2765F75D179804C700935727 /* Round.NUI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Round.NUI.json; sourceTree = "<group>"; };
@@ -236,16 +233,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2765F7571797DD2100935727 /* JSONKit */ = {
-			isa = PBXGroup;
-			children = (
-				2765F7581797DD2200935727 /* JSONKit.h */,
-				2765F7591797DD2200935727 /* JSONKit.m */,
-			);
-			name = JSONKit;
-			path = Core/JSONKit;
-			sourceTree = "<group>";
-		};
 		4A0B8626165EE59A005B5756 = {
 			isa = PBXGroup;
 			children = (
@@ -337,7 +324,6 @@
 		89B940211671418100850A9A /* NUI */ = {
 			isa = PBXGroup;
 			children = (
-				2765F7571797DD2100935727 /* JSONKit */,
 				89B940221671418100850A9A /* Core */,
 				2765F7551797DBF600935727 /* NUIStyle.json */,
 				89B940461671418100850A9A /* NUIStyle.nss */,
@@ -603,7 +589,6 @@
 				FC280DB916F127DE00B01664 /* UIProgressView+NUI.m in Sources */,
 				4A5B5B2916F6471400CF8D16 /* NUIProgressViewRenderer.m in Sources */,
 				2765F7541797D0FD00935727 /* NUIJSONStyleParser.m in Sources */,
-				2765F75A1797DD2200935727 /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

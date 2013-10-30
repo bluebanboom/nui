@@ -7,7 +7,7 @@
 //
 
 #import "NUIJSONStyleParser.h"
-#import "JSONKit.h"
+#import <Foundation/NSJSONSerialization.h>
 
 @implementation NUIJSONStyleParser
 
@@ -15,8 +15,8 @@
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"json"];
     NSAssert1(path != nil, @"File \"%@\" does not exist", fileName);
-    NSString* content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    id jsonData = [content objectFromJSONString];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    id jsonData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
     return [self consolidateRuleSets:[self getRuleSets:jsonData] withTopLevelDeclarations:[self getTopLevelDeclarations:jsonData]];
 }
 
